@@ -67,7 +67,11 @@ ul li#aboutprop:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+p.hh {
+    padding-top: 50%; 
+    background-color: transparent;
+    font-size: 25px;
+}
 p {
     text-align: center;
     background-color: white;
