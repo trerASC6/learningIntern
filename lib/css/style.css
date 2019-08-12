@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
 
 body {
-    background-color: rgb(181, 202, 241); 
+    background-image: linear-gradient(to right, #76ddb0, #1fc8db, #2cb5e8);
     font-family: Lexend Deca;
     color: white;
 }
-
-
 h1 {
     display: inline-block;
     font-size: 34px;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-right: 215px;
 }
 ul {
     display: inline-flex;
@@ -20,6 +19,36 @@ ul {
 }
 
 li {
-    margin-right: 2%; 
+    margin-right: 13%; 
+    font-size: 34px;
+}
 
+ul li#homeprop:hover{
+    /*color: rgb(199, 172, 23);*/
+    background: -webkit-linear-gradient(purple, rgb(3, 79, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ul li#internprop:hover{
+    background: -webkit-linear-gradient(rgb(221, 111, 7), crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+ul li#contactprop:hover{
+    background: -webkit-linear-gradient(rgb(148, 146, 23), rgb(228, 195, 10));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ul li#aboutprop:hover{
+    background: -webkit-linear-gradient(rgb(16, 109, 7), rgb(5, 168, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p {
+    text-align: center;
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    display: block;
+    color: black;
 }
