@@ -22,9 +22,10 @@ h1 {
         margin: auto;
         font-size: 150%;
         padding-top: 3%;
+
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 569px)  {
     h1 {
         font-size: 150%;
         padding-top: 3%;
@@ -38,14 +39,14 @@ ul {
 }
 @media (max-width: 568px) {
     ul {
-        margin: auto;
         text-align: center;
         display: block;
         display: flex;
         flex-direction: row;
+        padding-right: 2%;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 569px) {
     ul {
         margin: auto;
         text-align: center;
@@ -64,7 +65,7 @@ li {
         font-size: 75%;
     }
 }
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 569px) {
     li {
         font-size: 115%;
     }
@@ -177,6 +178,12 @@ h5 {
     font-size: 150%;
     padding-bottom: 2%;
 }
+@media (max-width: 568px) {
+    h5 {
+        margin-top: 50%;
+        display: block;
+    }
+}
 img.icon1 {
     height: 10%;
     width: 10%;
@@ -186,6 +193,12 @@ div.para {
 }
 p.mission {
     padding-bottom: 10%;
+}
+@media (max-width: 568px) {
+    p.mission {
+        margin-top: 5%;
+        display: inline-block;
+    }
 }
 p.extra {
     text-align: center;
