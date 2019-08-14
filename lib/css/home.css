@@ -16,6 +16,7 @@ h1 {
     font-size: 34px;
     margin-left: 15px;
     margin-right: 215px;
+
 }
 @media (max-width: 568px) {
     h1 {
@@ -64,22 +65,22 @@ ul {
 li {
     margin-right: 13%; 
     font-size: 34px;
+    margin-left: 15%;
 }
 @media (max-width: 568px){
     li {
         font-size: 75%;
+        margin-left: 0%;
+        margin-right: 11%; 
     }
 }
 @media (max-width: 1024px) and (min-width: 569px) {
     li {
         font-size: 115%;
+        padding-left: 0%; 
+        margin-left: 0%;
+        margin-right: 13%;
     }
-}
-ul li#homeprop:hover{
-    /*color: rgb(199, 172, 23);*/
-    background: -webkit-linear-gradient(purple, rgb(3, 79, 192));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 ul li#internprop:hover{
     background: -webkit-linear-gradient(rgb(221, 111, 7), crimson);
@@ -94,7 +95,7 @@ ul li#contactprop:hover{
 ul li#aboutprop:hover{
     background: -webkit-linear-gradient(rgb(16, 109, 7), rgb(5, 168, 5));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent;
 }
 p.welcome { 
     background-color: transparent;
@@ -146,15 +147,14 @@ h2 {
 }
 h2.who_we_are {
     flex-direction: column;
+    margin-left: 32%;
 }
-h2.unknown {
-    
-    flex-direction: column;
-    margin-left: 20%;
-    float: right;
-    margin-right: 4%;
+@media (max-width: 568px){
+    h2 {
+        width: 65%;
+        margin-left: 0%; 
+    }
 }
-
 p.weInfo {
     margin-top: 10%;
     color: white; 
@@ -163,15 +163,13 @@ p.weInfo {
     margin-bottom: 5%; 
     padding-bottom: 10%;
 }
-
-p.mount {
-    display: inline-block;
-    margin-top: 10%;
-    color: white; 
-    background-color: #2cb5e8;
-    font-size: 75%;
-    margin-bottom: 5%; 
-    padding-bottom: 10%;
+@media (max-width: 568px){
+    p.weInfo {
+        margin-right: 5%; 
+        margin-left: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
 }
 h4 {
     display: inline;
@@ -185,7 +183,7 @@ h5 {
 }
 @media (max-width: 568px) {
     h5 {
-        margin-top: 50%;
+        margin-top: 20%;
         display: block;
     }
 }
@@ -193,10 +191,7 @@ img.icon1 {
     height: 10%;
     width: 10%;
 }
-img.mount {
-    height: 15%;
-    width: 15%;
-}
+
 div.para {
     background-color: rgb(44, 44, 44);
 }
