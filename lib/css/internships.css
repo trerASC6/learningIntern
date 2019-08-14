@@ -1,17 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
 body {
     background-color: white;
+    font-family: Lexend Deca;
 }
 div.header {
     display: flex;
     flex-direction: row;
+    color: white;
+    background-image: linear-gradient(#100975, #561eaf, #9d1dcf);
+    padding-bottom: 2%; 
+    padding-top: 2%;
+}
+a {
+    color: white;
 }
 ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+    font-size: 150%;
 }
 button {
-    margin-left: 4%;
+    margin-left: 10%;
 }
 li {
     margin-right: 15%;
+}
+ul li#homeprop:hover{
+    /*color: rgb(199, 172, 23);*/
+    background: -webkit-linear-gradient(rgb(128, 35, 6), rgb(238, 98, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

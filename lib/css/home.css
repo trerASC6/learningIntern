@@ -8,7 +8,9 @@ body {
 div.header {
     background-image: linear-gradient(to right, #76ddb0, #1fc8db, #2cb5e8); 
 }
-
+a {
+    color: white;
+}
 h1 {
     display: inline-block;
     font-size: 34px;
