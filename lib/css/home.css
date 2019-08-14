@@ -41,11 +41,13 @@ ul {
 }
 @media (max-width: 568px) {
     ul {
+        margin: auto;
         text-align: center;
         display: block;
         display: flex;
         flex-direction: row;
-        padding-right: 2%;
+        padding-left: 8%; 
+        font-size: 150%;
     }
 }
 @media (max-width: 1024px) and (min-width: 569px) {
@@ -56,6 +58,7 @@ ul {
         display: block;
         display: flex;
         flex-direction: row;
+        padding-left: 15%; 
     }
 }
 li {
@@ -161,7 +164,7 @@ p.weInfo {
     padding-bottom: 10%;
 }
 
-p.unknown2 {
+p.mount {
     display: inline-block;
     margin-top: 10%;
     color: white; 
@@ -190,6 +193,10 @@ img.icon1 {
     height: 10%;
     width: 10%;
 }
+img.mount {
+    height: 15%;
+    width: 15%;
+}
 div.para {
     background-color: rgb(44, 44, 44);
 }
@@ -209,4 +216,5 @@ p.extra {
     font-size: 150%;
     font-family: Beth Ellen;
     margin-bottom: 5%;
-}
+} 
+
