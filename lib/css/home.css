@@ -150,9 +150,9 @@ h2.who_we_are {
     margin-left: 32%;
 }
 @media (max-width: 568px){
-    h2 {
+    h2.who_we_are {
         width: 65%;
-        margin-left: 0%; 
+        margin-left: 18%;
     }
 }
 p.weInfo {

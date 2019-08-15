@@ -14,6 +14,8 @@ div.header {
 }
 h1 {
     margin-left: 4%;
+    margin-right: 28%;
+    font-size: 200%;
 }
 a {
     color: white;
@@ -24,7 +26,7 @@ ul {
     list-style-type: none;
     font-size: 150%;
 }
-button {
+button#Submitprop {
     margin-left: 10%;
     background-image: linear-gradient(#92095d, #db1672, #ee1a48d8);
     color: white;
@@ -35,6 +37,37 @@ li {
 ul li#homeprop:hover{
     /*color: rgb(199, 172, 23);*/
     background: -webkit-linear-gradient(rgb(128, 35, 6), rgb(238, 98, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div.filter button {
+    color: black;
+    background-color: gold;
+    width: 8%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+p.welcome {
+    text-align: center;
+    padding-bottom: 7%;
+    padding-top: 4%;
+    /*margin-left: 3%;
+    margin-right: 3%;*/
+    font-size: 125%;
+    background-image:  linear-gradient(#92095d, #db1672, #ee1a48d8);
+    /*border-radius: 18px;*/
+    color: white; 
+}
+div.form-check {
+    margin-left: 1%;
+}
+ul li#aboutprop:hover{
+    background: -webkit-linear-gradient(rgb(18, 126, 8), rgb(7, 189, 7));
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+ul li#contactprop:hover{
+    background: -webkit-linear-gradient(rgb(148, 146, 23), rgb(228, 195, 10));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
