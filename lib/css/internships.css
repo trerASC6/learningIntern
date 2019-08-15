@@ -40,18 +40,18 @@ ul li#homeprop:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-div.filter button {
+/*div.filter button {
     color: black;
     background-color: gold;
     width: 8%;
     margin-top: 2%;
     margin-left: 1%;
-}
+}*/
 button.normal {
     color: white;
     background-color: rgb(33, 92, 168);
     width: 8%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 1%;
 }
 p.welcome {
@@ -81,4 +81,7 @@ ul li#contactprop:hover{
 }
 div.topnav {
     text-align: center;
+}
+table#interntable {
+    padding-top: 3%;
 }

@@ -23,15 +23,10 @@
         <button id="Submitprop"> Submit Internships</button>
     </div>
     <p class="welcome">Here you can search for internships that suit you and even recomend internships and companies for other students! Just click the 'Submit Internships' button. Good luck students!</p>
-    <div class="topnav">
-        <input type="text" placeholder="Search">
-        <button type="submit">
-            Submit
-         </button>
-      </div>
-    <div class="filter">
+    <!--<div class="filter">
       <button>Gold</button>
-    </div>
+    </div>-->
+    <div class="filter">
     <button class="normal">Filter</button>
     <div class="form-check">
             <input class="form-check-input" type="checkbox" value="checked" id="paidCheck">
@@ -52,4 +47,201 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+<form>
+    <div class = "internships">
+    <input type = "text" id = "search_input" onkeyup = "filterSearch()" placeholder="Search..."/>
+    <button id = "submit_button">
+        Submit
+    </button>
+   
+    </div>
+</form>
+<table id = "internTable">
+    <tr class = "header">
+        <th style="width: 60%">Internships</th>
+    </tr>
+    <tr>
+        <td colspan = "2">
+        <strong>Intern For Tutoring</strong><br>
+        Paid Internship | Part-Time<br>
+        Part-Time Intern for a Tutoring Academy Khan's Tutorial - Jamaica, NY 23 hours ago Part-time | InternshipEstimated: $30,000 - $40,000 a year Apply Now Job Description<span id = "dots">...</span><span id = "more">
+Khan's Tutorial is looking for highly qualified high school underclassmen who can work in a fast paced, academic environment. Tasks include:
+
+Grading
+Teaching Support
+Overall Office Support
+
+This position will require a working commitment of at least 6 months. We require regular attendance at least 2 days a week, with weekends being preferred. Working hours are Saturdays and/or Sundays from 10:00 AM - 6:00 PM and up to 1 weeknight from 5:00 PM - 7:00 PM. High performing individuals have many opportunities for growth within the company. Interns can use the internship to fulfill volunteer hours for school.
+
+Requirements for the ideal candidate include:
+High School GPA of at least 90
+
+Ability to work well with teammates
+
+Preferred:
+Students of Stuyvesant, Bronx Science, Brooklyn Tech, new Specialized High Schools, or Top Screened High Schools 
+        </span>
+    <!-- <button onclick="readMore()" id = "readMoreBtn">Read more</button> -->
+        </td>
+    </tr>
+    <tr>
+        <td colspan = "2">
+            <strong>Marketing And Strategy Intern</strong><br>
+            Paid Internship | Full-Time <br>
+            We are seeking a driven and enthusiastic individual to join our team as a Marketing & Strategy intern. The position requires an organized and multifaceted individual who is... 
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan = "2">
+            <strong>Drum Teacher Intern</strong><br>
+            Paid Internship | Part-Time <br>
+            Are you talented in the arts and interested in passing on your knowledge? Looking to make money doing something you love? Perhaps a teaching job is the right fit for you! So often, getting a job teaching is extremely difficult. Qualified performing arts jobs are... 
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <strong>Music Label Social Media Intern</strong><br>
+            Paid Internship | Full-Time <br>
+            Our Social Media Intern is responsible for coordinating and executing our independent labels social media strategy, working across key social media channels including Facebook...
+        </td>
+    </tr>
+    <tr>
+        <td colspan = "2">
+            <strong>Fall Entertainment Marketing Intern</strong><br>
+            Unpaid Internship | Part-Time<br>
+            Partner management – Interns are required to help the marketing department in soliciting new partners, developing and maintaining partner relationships. They will also insist in collecting proof of service from these partners. This will be key for building out campaigns for clients including, but not limited to... 
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <strong>Software Engineering/Data Analytics Internship</strong><br>
+            Paid Internship | Full-Time<br>
+            Cowen Sustainable Investments is seeking an intern to design technology systems in ASP.NET and build web user interface. The project involves building and improving existing web user interface and web APIs. The job includes coordinating with our technology group to incorporate quantitative models into web-based user...
+            
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <strong>Data Scientist
+            </strong><br>
+            Unpaid Internship | Full-Time<br>
+            Analyze data sets and protoype as many experiments as necessary to converge to the optimal practical solution. Work with New York-based Alpha Pro machine learning team in order to expand the predictive modeling services, and work with state-of-the art stack of data modeling paradigms. Get responsibility right from... 
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <strong>Social Media Intern</strong><br>
+            Paid Internship | Part-Time <br>
+            LLPR Inspire is looking for a social media intern This amazing intern will be assisting our founder with our social media needs and will receive hands-on experience. From building social media campaigns, content and assisting with influencers. This intern will be able to create and inspire a generation while...
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <strong>Marketing Intern</strong><br>
+            Paid Internship | Part-Time<br>
+            The Interviewer conducts marketing research studies by interviewing survey respondents for both consumer and business surveys. The Interviewer follows survey scripts, works to complete the surveys for research studies, and enters responses into a computer. There is no telemarketing or sales involved...
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <strong>Fashion Intern</strong><br>
+            Paid Internship | Full-Time<br>
+            PRC is a public relations company which is at the pinnacle of the fashion industry. The company houses a breadth of well known brands which make up the fabric of fashion. Seeking an enthusiastic, hard working intern to become a member of our... 
+        </td>
+    </tr>
+    
+</table>
+<script>
+$("input[name='filterStatus']").change(function () {
+    var classes = [];
+
+    $("input[name='filterStatus']").each(function () {
+        if ($(this).is(":checked")) { classes.push('.' + $(this).val()); }
+    });
+
+    if (classes == "") { // if no filters selected, show all items
+        $("#StatusTable tbody tr").show();
+    } else { // otherwise, hide everything...
+        $("#StatusTable tbody tr").hide();
+
+        $("#StatusTable tr").each(function () {
+            var show = true;
+            var row = $(this);
+            classes.forEach(function (className) {
+                if (row.find('td' + className).html() == '&nbsp;') { show = false; }
+            });
+            if (show) { row.show(); }
+        });
+    }
+});
+
+function filterSearch (){
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("search_input");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("internTable");
+    tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++){
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter)>-1){
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }    
+            }
+        }
+}
+
+function readMore (){
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementsById("more");
+    var btnText = document.getElementsById("readMoreBtn");
+    if (dots.style === "none"){
+        dots.style.display = "contents";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "contents";
+    }
+}
+</script>
+<style>
+    
+
+#internTable {
+    margin-left: auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    width: 60%;
+    border: 30px solid #2cb5e8; 
+}
+
+#internTable th{
+    text-align: center;
+    padding: 30px;
+    border-right: 30px solid #2cb5e8
+}
+ #internTable td{
+     text-align: left;
+     padding: 20px;
+ }
+
+ #internTable tr {
+    border-bottom: 20px solid #ddd;
+
+ }
+
+ #internTable tr.header, #internTable tr:hover{
+     background-color: #f1f1f1;
+ }
+ 
+#more {display:none;}
+</style>
 </html>
