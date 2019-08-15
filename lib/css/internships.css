@@ -47,6 +47,13 @@ div.filter button {
     margin-top: 2%;
     margin-left: 1%;
 }
+button.normal {
+    color: white;
+    background-color: rgb(33, 92, 168);
+    width: 8%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
 p.welcome {
     text-align: center;
     padding-bottom: 7%;
@@ -60,6 +67,7 @@ p.welcome {
 }
 div.form-check {
     margin-left: 1%;
+    margin-top: 1%;
 }
 ul li#aboutprop:hover{
     background: -webkit-linear-gradient(rgb(18, 126, 8), rgb(7, 189, 7));
@@ -70,4 +78,7 @@ ul li#contactprop:hover{
     background: -webkit-linear-gradient(rgb(148, 146, 23), rgb(228, 195, 10));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+div.topnav {
+    text-align: center;
 }
